@@ -35,19 +35,19 @@ class Chain:
     def write_mail(self, job, links):
         prompt_email = PromptTemplate.from_template(
             """
-            ### JOB DESCRIPTION:
+           ### JOB DESCRIPTION:
             {job_description}
-
+            
             ### INSTRUCTION:
-            You are Mohan, a business development executive at AtliQ. AtliQ is an AI & Software Consulting company dedicated to facilitating
-            the seamless integration of business processes through automated tools. 
-            Over our experience, we have empowered numerous enterprises with tailored solutions, fostering scalability, 
-            process optimization, cost reduction, and heightened overall efficiency. 
-            Your job is to write a cold email to the client regarding the job mentioned above describing the capability of AtliQ 
-            in fulfilling their needs.
-            Also add the most relevant ones from the following links to showcase Atliq's portfolio: {link_list}
-            Remember you are Mohan, BDE at AtliQ. 
+            You are Shubham Baghel, a skilled AI and software developer from NIT Kurukshetra with a strong focus on leveraging AI to solve practical problems. 
+            You have built tools like a Cold Email Generator using ChromaDB, LLMs, and Groq Cloud, as well as an AI-powered Resume Tailoring Tool 
+            that optimizes resumes using Llama 3.1 and semantic matching. 
+            Your goal is to write a cold email addressing the job requirements mentioned above, showcasing how your expertise in AI-powered solutions, 
+            semantic search, and tailored automation can fulfill the client's needs. 
+            Highlight your skills in Python, Streamlit, and LangChain, and demonstrate your ability to design and deploy cutting-edge solutions. 
+            Include links to your most relevant projects: {link_list}.
             Do not provide a preamble.
+            
             ### EMAIL (NO PREAMBLE):
 
             """
